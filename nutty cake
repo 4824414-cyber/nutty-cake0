@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nutty Cake: mini tortas de chocolate con crema de pistacho. Un antojo dulce para disfrutar.">
+<title>Nutty Cake | Dulces momentos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#c5a15a;--green2:#9c7937;--pistachio:#27231d;--cream:#11100f;--paper:#1b1916;--choco:#f4ead7;--text:#eee4d2;--muted:#b8ad9b;--pink:#2b241a;--line:#393127}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--text);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:#11100fed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font:700 25px "Playfair Display",serif;color:var(--choco)}.logo{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--pistachio);border:1px solid #c9d5b6;color:var(--green2);font-size:23px}nav{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:600;color:#d1c5b2}nav a:hover{color:var(--green2)}.navbtn{padding:12px 19px;border-radius:28px;background:var(--green);color:white} .navbtn:hover{background:var(--green2);color:white}
+.hero{padding:54px 0 68px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green2);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:22px;height:2px;background:#a8b88d}h1,h2,h3,p{margin-top:0}h1{font:600 clamp(46px,6vw,74px)/1.04 "Playfair Display",serif;letter-spacing:-1.8px;color:var(--choco);margin:19px 0}.hero h1 em{font-style:normal;color:var(--green)}.hero-copy{font-size:15px;line-height:1.85;color:var(--muted);max-width:490px;margin-bottom:25px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;border-radius:28px;font-size:13px;font-weight:700;transition:.2s}.primary{background:var(--green);color:#fff;box-shadow:0 8px 20px #c5a15a20}.primary:hover{background:var(--green2);transform:translateY(-2px)}.secondary{background:#fff;border:1px solid #d9dfcd;color:var(--green2)}.secondary:hover{background:var(--pistachio)}.tiny-note{font-size:11px;color:#8a7e72;margin-top:22px}.hero-visual{position:relative;padding:18px 12px 24px 25px}.hero-visual:before{content:"";position:absolute;inset:0 0 12px 35px;background:var(--pistachio);border-radius:48% 48% 22px 22px;transform:rotate(3deg)}.hero-img{position:relative;width:100%;height:440px;object-fit:cover;border-radius:46% 46% 22px 22px;box-shadow:0 18px 45px #39282020}.bubble{position:absolute;z-index:2;background:#fffdf8;border:1px solid var(--line);border-radius:16px;padding:13px 16px;box-shadow:0 10px 28px #39282016}.bubble b{display:block;font:600 17px "Playfair Display",serif;color:var(--choco)}.bubble small{font-size:10px;color:var(--muted)}.bubble-price{left:0;bottom:5px}.bubble-flavor{right:-4px;top:34px;background:var(--pink);border-color:#efd4ca;color:#784e41}.bubble-flavor b{color:#784e41}
+.highlights{background:#1c1a16;border-block:1px solid #393127}.highlights-in{display:flex;justify-content:space-around;align-items:center;gap:15px;flex-wrap:wrap;padding:20px 0}.highlight{display:flex;gap:9px;align-items:center;font-size:12px;font-weight:600;color:#d8c69f}.highlight span{font-size:19px}
+section{padding:82px 0}.section-title{text-align:center;max-width:660px;margin:0 auto 38px}.kicker{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--green2);font-weight:700;margin-bottom:12px}.section-title h2{font:600 clamp(34px,4vw,48px)/1.13 "Playfair Display",serif;color:var(--choco);margin-bottom:12px}.section-title p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.product-pic{position:relative}.product-pic img{display:block;width:100%;height:430px;object-fit:cover;border-radius:22px}.pic-label{position:absolute;bottom:17px;left:17px;background:#171512ed;padding:10px 14px;border-radius:12px;font-size:11px;font-weight:700;color:var(--green2)}.product-copy h2{font:600 40px/1.12 "Playfair Display",serif;color:var(--choco);margin:12px 0 15px}.product-copy p{font-size:13px;line-height:1.9;color:var(--muted)}.features{list-style:none;padding:0;margin:22px 0;display:grid;gap:12px}.features li{display:flex;align-items:center;gap:10px;font-size:12px;color:#5d5147}.tick{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--pistachio);color:var(--green2);font-size:12px;flex:none}.price-line{display:flex;align-items:center;gap:16px;margin:22px 0}.price{font:700 38px "Playfair Display",serif;color:var(--green2)}.price small{display:block;font:500 10px "DM Sans",sans-serif;color:var(--muted)}.price-desc{border-left:1px solid var(--line);padding-left:15px;font-size:11px;line-height:1.6;color:var(--muted)}
+.about{background:#191714}.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}.about-img{width:100%;height:390px;object-fit:cover;border-radius:22px}.about-copy h2{font:600 40px/1.12 "Playfair Display",serif;color:var(--choco);margin:12px 0 16px}.about-copy p{font-size:13px;line-height:1.9;color:var(--muted)}.signature{font:italic 17px "Playfair Display",serif;color:var(--green2);margin-top:20px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.value{padding:25px 23px;background:#1b1916;border:1px solid var(--line);border-radius:18px;min-height:174px;transition:.2s}.value:hover{transform:translateY(-3px);box-shadow:0 12px 28px #3928200c}.value-icon{font-size:22px;margin-bottom:13px;color:var(--green)}.value h3{font:600 20px "Playfair Display",serif;color:var(--choco);margin-bottom:8px}.value p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.mission{padding-top:0}.mission-box{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#201d18;border:1px solid #55452b;border-radius:22px;overflow:hidden;color:white}.mission-part{padding:43px 42px}.mission-part+ .mission-part{background:#2b261d}.mission-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#e2eacb;font-weight:700}.mission h2{font:600 32px "Playfair Display",serif;margin:12px 0}.mission p{font-size:12px;line-height:1.9;color:#f7f7ed;margin:0}
+.gallery{padding-top:20px}.gallery-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:14px}.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:17px}.gallery-grid img:first-child{height:270px}.gallery-grid img:nth-child(2){margin-top:23px}.gallery-grid img:nth-child(3){margin-top:46px}
+.contact{background:#201d18;padding:62px 0}.contact-in{display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{font:600 36px "Playfair Display",serif;color:var(--choco);margin:7px 0}.contact p{font-size:12px;color:#c0b49f;margin:0}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{background:#080807;color:#f4ead7;padding:25px 0}.footer-in{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-logo{font:700 21px "Playfair Display",serif}.footer-logo span{color:#d3b46e}.footer-note{font-size:10px;color:#b8ad9b}.footer-in a{font-size:11px;color:#d3b46e}
+@media(max-width:780px){.wrap{width:calc(100% - 32px)}.nav{height:66px}nav{gap:12px}nav a:not(.navbtn){display:none}.navbtn{padding:10px 14px;font-size:11px}.hero{padding:38px 0 50px}.hero-grid,.product,.about-grid{grid-template-columns:1fr;gap:30px}.hero-visual{max-width:560px;margin:auto;width:100%}.hero-img{height:350px}.hero-visual:before{inset:0 0 12px 25px}.bubble-flavor{right:0}.highlights-in{justify-content:center;gap:14px 22px}.highlights{padding:0}.highlight{font-size:10px}section{padding:62px 0}.product-pic img{height:330px}.about-img{height:310px}.values{grid-template-columns:1fr 1fr}.mission-box{grid-template-columns:1fr}.mission-part{padding:32px 28px}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img,.gallery-grid img:first-child{height:180px;margin:0}.gallery-grid img:last-child{display:none}.contact-in{align-items:flex-start;flex-direction:column}}
+@media(max-width:430px){.brand{font-size:21px}.logo{width:36px;height:36px}.hero h1{font-size:45px}.hero-img{height:300px}.product-copy h2,.about-copy h2{font-size:34px}.values{grid-template-columns:1fr}.value{min-height:0}.gallery-grid img,.gallery-grid img:first-child{height:145px}.mission h2{font-size:28px}}
+</style>
+
+<style>
+/* Acabado negro y dorado de Nutty Cake */
+body{background:#11100f;color:#eee4d2}
+header{background:rgba(17,16,15,.94);border-bottom-color:#393127}
+.brand{color:#f4ead7}.logo{background:#211d17;border-color:#9c7937;color:#d3b46e}
+nav{color:#d1c5b2}.navbtn,.primary{background:#9c7937;color:#fffaf1}
+.navbtn:hover,.primary:hover{background:#b18d49}
+.eyebrow,.kicker,.mission-label{color:#d3b46e}
+.eyebrow:before{background:#c5a15a}
+.hero h1,.section-title h2,.product-copy h2,.about-copy h2,.value h3,.contact h2{color:#f4ead7}
+.hero h1 em{color:#d3b46e}
+.hero-visual:before{background:#29241b}
+.hero-img,.product-pic img,.about-img,.gallery-grid img{border:1px solid #4b3b25}
+.bubble{background:#1b1916;border-color:#55452b}.bubble b{color:#f4ead7}
+.bubble-flavor{background:#292116;border-color:#7b6033}.bubble-flavor b{color:#e2c27a}
+.highlights{background:#1b1916;border-color:#393127}.highlight{color:#d8c69f}
+.pic-label{background:#171512ed;color:#e2c27a;border:1px solid #55452b}
+.features li{color:#d8cdbb}.tick{background:#2b261d;color:#e2c27a}
+.price{color:#e2c27a}.price-desc{border-color:#55452b}
+.about{background:#191714}
+.value{background:#1b1916;border-color:#393127}.value-icon{color:#d3b46e}
+.mission-box{background:#211d17;border:1px solid #55452b}.mission-part+.mission-part{background:#2b261d}
+.contact{background:#1b1916;border-top:1px solid #55452b}
+.secondary{background:#171512;border-color:#66502c;color:#e2c27a}.secondary:hover{background:#292116}
+footer{background:#080807;border-top:1px solid #55452b}
+.signature{color:#d3b46e}
+.team{padding:72px 0;background:#151310;border-top:1px solid #393127}
+.team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.team-card{padding:22px 13px;text-align:center;border:1px solid #55452b;border-radius:15px;background:linear-gradient(145deg,#211e19,#151310)}
+.team-mark{width:43px;height:43px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;border:1px solid #9c7937;color:#d3b46e;font:600 19px "Playfair Display",serif;background:#191714}
+.team-card h3{font:600 15px/1.4 "DM Sans",sans-serif;color:#f4ead7;margin:0}
+.team-card p{font-size:10px;color:#b8ad9b;margin:6px 0 0}
+@media(max-width:780px){.team-grid{grid-template-columns:repeat(2,1fr)}.team-card:last-child{grid-column:1/-1}}
+@media(max-width:430px){.team-grid{grid-template-columns:1fr 1fr}.team-card{padding:18px 9px}.team-card h3{font-size:13px}}
+</style>
+
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="logo">✿</span>Nutty Cake</a>
+<nav aria-label="Menú"><a href="#producto">Producto</a><a href="#nosotros">Nosotros</a><a href="#valores">Valores</a><a href="#equipo">Equipo</a><a class="navbtn" href="#contacto">Haz tu pedido ↗</a></nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+<div><div class="eyebrow">Un detalle dulce para cada día</div><h1>Tu momento<br><em>más delicioso.</em></h1>
+<p class="hero-copy">Descubre Nutty Cake: mini tortas de chocolate con crema de pistacho, preparadas para disfrutar cucharada a cucharada. Un postre bonito, práctico y lleno de sabor.</p>
+<div class="actions"><a class="btn primary" href="#producto">Conoce nuestro postre ↓</a><a class="btn secondary" href="#nosotros">Nuestra historia</a></div><div class="tiny-note">♡ Elaborado con dedicación · Presentación biodegradable</div></div>
+<div class="hero-visual"><img class="hero-img" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=85" alt="Torta de chocolate decorada"><div class="bubble bubble-price"><small>Un gustito para ti</small><b>S/ 6.50</b></div><div class="bubble bubble-flavor"><small>Combinación especial</small><b>Chocolate + pistacho ✿</b></div></div>
+</div></section>
+<div class="highlights"><div class="wrap highlights-in"><div class="highlight"><span>♡</span> Hecho con cariño</div><div class="highlight"><span>✿</span> Sabor especial</div><div class="highlight"><span>♧</span> Envase biodegradable</div><div class="highlight"><span>✦</span> Perfecto para compartir</div></div></div>
+<section id="producto"><div class="wrap product">
+<div class="product-pic"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1100&q=85" alt="Postre de chocolate"><div class="pic-label">Un antojo que alegra el día ✿</div></div>
+<div class="product-copy"><div class="kicker">Nuestro favorito</div><h2>Mini torta de chocolate y pistacho</h2><p>La combinación que estabas esperando: bizcocho de chocolate y un toque de crema de pistacho, en un práctico envase cuchareable de 300 ml. Ideal para darte un gusto o compartir un momento especial.</p>
+<ul class="features"><li><span class="tick">✓</span> Bizcocho de chocolate suave</li><li><span class="tick">✓</span> Crema de pistacho preparada con dedicación</li><li><span class="tick">✓</span> Presentación individual de 300 ml</li><li><span class="tick">✓</span> Envase biodegradable</li></ul>
+<div class="price-line"><div class="price">S/ 6.50<small>precio por unidad</small></div><div class="price-desc">Pequeño en tamaño,<br>grande en sabor.</div></div><a class="btn primary" href="#contacto">¡Quiero mi Nutty Cake! ↗</a></div>
+</div></section>
+<section class="about" id="nosotros"><div class="wrap about-grid"><img class="about-img" src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1000&q=85" alt="Cupcakes artesanales decorados"><div class="about-copy"><div class="kicker">Nuestra esencia</div><h2>Un emprendimiento hecho con ilusión.</h2><p>Nutty Cake nace de la pasión por la repostería y del deseo de compartir alegría a través de cada postre. Nuestra propuesta une el sabor del chocolate, la personalidad del pistacho y una presentación cuidada.</p><p>Creemos que los momentos más sencillos también merecen algo especial. Por eso ponemos creatividad, cariño y responsabilidad en cada detalle de nuestra marca.</p><div class="signature">Con cariño, equipo Nutty Cake ♡</div></div></div></section>
+<section id="valores"><div class="wrap"><div class="section-title"><div class="kicker">Lo que nos guía</div><h2>Nuestros valores</h2><p>La calidad de nuestro producto comienza con los valores que compartimos como equipo.</p></div><div class="values">
+<article class="value"><div class="value-icon">✿</div><h3>Calidad</h3><p>Cuidamos la preparación, el sabor y la presentación para ofrecer una experiencia agradable.</p></article>
+<article class="value"><div class="value-icon">♡</div><h3>Pasión</h3><p>Trabajamos con entusiasmo y dedicación, poniendo cariño en cada tortita.</p></article>
+<article class="value"><div class="value-icon">♧</div><h3>Responsabilidad</h3><p>Asumimos cada tarea con compromiso y atención a los detalles.</p></article>
+<article class="value"><div class="value-icon">✦</div><h3>Creatividad</h3><p>Combinamos sabores y una imagen fresca para hacer que Nutty Cake sea especial.</p></article>
+<article class="value"><div class="value-icon">☀</div><h3>Cercanía</h3><p>Queremos brindar una atención amable y crear una relación de confianza con nuestros clientes.</p></article>
+<article class="value"><div class="value-icon">♻</div><h3>Conciencia</h3><p>Preferimos envases biodegradables como parte de nuestro compromiso con el cuidado del entorno.</p></article>
+</div></div></section>
+
+<section class="team" id="equipo"><div class="wrap">
+<div class="section-title"><div class="kicker">Detrás de cada detalle</div><h2>Conoce a nuestro equipo</h2><p>Las personas que forman parte de Nutty Cake y ponen dedicación en este emprendimiento.</p></div>
+<div class="team-grid">
+<article class="team-card"><div class="team-mark">L</div><h3>Luciano Matias</h3><p>Integrante</p></article>
+<article class="team-card"><div class="team-mark">D</div><h3>Dominick Cardenas</h3><p>Integrante</p></article>
+<article class="team-card"><div class="team-mark">S</div><h3>Salvador Morales</h3><p>Integrante</p></article>
+<article class="team-card"><div class="team-mark">M</div><h3>Maria Fernanda</h3><p>Integrante</p></article>
+<article class="team-card"><div class="team-mark">M</div><h3>Melany Ponce</h3><p>Integrante</p></article>
+</div></div></section>
+
+<section class="mission"><div class="wrap mission-box"><div class="mission-part"><div class="mission-label">Nuestra misión</div><h2>Endulzar tus momentos.</h2><p>Ofrecer deliciosas mini tortas de chocolate con crema de pistacho, elaboradas con dedicación, calidad y creatividad, brindando a nuestros clientes una experiencia dulce, única y accesible. Nos comprometemos a cuidar cada detalle de nuestros productos y a satisfacer los gustos de quienes nos eligen.</p></div><div class="mission-part"><div class="mission-label">Nuestra visión</div><h2>Crecer compartiendo dulzura.</h2><p>Ser una empresa de repostería reconocida por la calidad, el sabor y la presentación de nuestros productos, creciendo como emprendimiento y llegando a más clientes. Aspiramos a innovar constantemente, fortalecer nuestro equipo y convertir a Nutty Cake en una marca que endulce momentos especiales.</p></div></div></section>
+<section class="gallery"><div class="wrap"><div class="section-title"><div class="kicker">Un vistazo a nuestro mundo</div><h2>Pequeños placeres, grandes sonrisas</h2><p>Inspirados en la alegría de compartir algo rico y preparado con cariño.</p></div><div class="gallery-grid"><img src="https://images.unsplash.com/photo-1551024506-0?auto=format&fit=crop&w=800&q=85" alt="Dulces de repostería"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=85" alt="Pastel decorado"><img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=85" alt="Postre artesanal"></div></div></section>
+<section class="contact" id="contacto"><div class="wrap contact-in"><div><div class="kicker">¿Listo para un antojo?</div><h2>¡Hagamos tu día más dulce!</h2><p>Haz tu pedido por WhatsApp: <strong style="color:#d3b46e;font-size:15px;letter-spacing:.4px">+51 993 118 072</strong></p></div><div class="contact-actions"><a class="btn primary" href="https://wa.me/51993118072" target="_blank" rel="noopener">Pedir por WhatsApp ↗</a><a class="btn secondary" href="https://x.com/NUTTYCAKEai" target="_blank" rel="noopener">Síguenos en X (Twitter) ↗</a></div></div></section>
+</main>
+<footer><div class="wrap footer-in"><div class="footer-logo">Nutty <span>Cake ✿</span></div><div class="footer-note">© 2026 Nutty Cake · Dulces momentos, hechos con cariño.</div><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body></html>
